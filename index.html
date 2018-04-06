@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Snake Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onclick="focus()">
+        <div id="snake" style="position:absolute;left:100px;top:100px">
+            <div class="eye" id="eye-up"></div>
+            <div class="eye" id="eye-down"></div>
+        </div>
+        <input type="text" id="helperInput" onkeydown="move(event)" autofocus>
+        <div id="test"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -8,11 +8,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body onclick="focus()">
-        <div id="snake" style="position:absolute;left:100px;top:100px">
-            <div class="eye" id="eye-up"></div>
-            <div class="eye" id="eye-down"></div>
+        <div id="snake" style="position:absolute;left:100px;top:100px; width:200px">
+            <div class="eye eye-normal" id="eye-up"></div>
+            <div class="eye eye-normal" id="eye-down"></div>
         </div>
-        <input type="text" id="helperInput" onkeydown="move(event)" autofocus>
+        <img src="small_apple.png" alt="apple" id="apple">
+        <input type="text" id="helperInput" onkeydown="startMove(event)" autofocus>
         <div id="test"></div>
         <script src="script.js"></script>
     </body>

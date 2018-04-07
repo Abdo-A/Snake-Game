@@ -26,15 +26,15 @@ function move(event){
         snake.style.transform="rotate(90deg)";
     }
     if(key==37&&parseInt(snake.style.left)<0){
-        snake.style.left='1200px';
+        snake.style.left=screen.width+'px';
     }
     if(key==38&&parseInt(snake.style.top)<0){
-        snake.style.top='650px';
+        snake.style.top=screen.height+'px';
     }
-    if(key==39&&parseInt(snake.style.left)>1200){
+    if(key==39&&parseInt(snake.style.left)>screen.width){
         snake.style.left='0px';
     }
-    if(key==40&&parseInt(snake.style.top)>650){
+    if(key==40&&parseInt(snake.style.top)>screen.height){
         snake.style.top='0px';
     }
     if(key==81){ //Q
